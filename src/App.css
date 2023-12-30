@@ -1,38 +1,89 @@
+/* App.css */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-around;
+  margin: 20px;
+}
+
+.taskboards {
+  flex: 1;
+}
+
+.project {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.center {
+  flex: 2;
+  padding: 0 20px;
+}
+
+.project-tasks {
+  display: flex;
+  gap: 20px;
+}
+
+.task-column {
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px; /* Adjust the width as needed */
+}
+
+.task {
+  margin-bottom: 10px;
+}
+
+.add-btn {
+  cursor: pointer;
+  color: #007bff;
+}
+
+.add-btn:hover {
+  text-decoration: underline;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  cursor: pointer;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background: #0056b3;
 }
